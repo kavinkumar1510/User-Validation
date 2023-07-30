@@ -1,0 +1,105 @@
+.box
+{
+ 
+  width: 80%;
+  background-color: #ebe6e8;
+  font-size: 14px;
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+.input__email {
+  width: 75%;
+  padding: 10px;
+  margin: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-shadow: 0 0 0 1px #f8bfbf;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff5f5;
+  transition: all .3s;
+}
+
+.input__email::placeholder {
+  color: #ce9797;
+  font-size: 14px;
+}
+
+.input__email:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px #ee8c8c;
+  border: none;
+  transition: all .3s;
+}
+.cnt
+{
+  margin-left: 190px;
+ 
+}
+.ico{
+  margin-left: 49%;
+  padding: 1px;
+
+}
+
+button {
+  cursor: pointer;
+  --color: #ee8c8c;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.2em;
+
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 9px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ button:hover {
+  color: #fff;
+ }
+ 
+ button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ button:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ button:active:before {
+  background: #dda2a5;
+  transition: background 0s;
+ }
+
+ a{
+  text-decoration-line: none;
+ }
