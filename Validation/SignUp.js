@@ -8,8 +8,8 @@ function valid() {
     const phn = /^\d{10}$/;
     const em = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (name === "") {
-        alert("Username can't be empty");
+   if (name === "" || name<=65 || name>=122 || name.length<5) {
+        alert("Invalid Username");
         return false;
     }
 
